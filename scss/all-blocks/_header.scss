@@ -51,57 +51,6 @@
     }  
 }
 
-// .header{
-//     position: relative;
-//     top: 0;
-//     left: 0;
-// }
-
-// .hamburger-link{
-//     border: none;
-//     width: 40px;
-//     height: 40px;
-//     background-color: #fff;
-//     display: inline-block;
-// }
-
-// .header-navbar{
-//     display: none;
-// }
-
-// .header--open .header-navbar{
-//     padding-top: 40px;
-//     padding-bottom: 377px;
-//     position: absolute;
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-//     min-height: 577px;
-//     position: absolute;
-//     top: 100%;
-//     left: 0;
-//     background: linear-gradient(180deg, #FEFCF7 55.94%  0%, rgba(254, 252, 247, 0.504981) );
-// }    
-
-// .header--open .header-nav-list{
-//     padding: 0;
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// .header--open .header-nav-list .header-nav-item{
-//     margin-bottom: 32px;
-// }
-
-// .header--open .header-nav-list .header-nav-item a{
-//     margin-bottom: 32px;
-//     font-family: Fraunces 9pt;
-//     font-weight: 900;
-//     font-size: 24px;
-//     line-height: 32px;
-//     color: #333D4B;
-// }
-
 @media only screen and (max-width: 633px){
     .header{
         position: relative;
@@ -109,16 +58,34 @@
         left: 0;
 
         .header--open &__navbar{
-            margin: 0;
-            width: 70vw;
-            height: 100vh;
-            background-color: blueviolet;
+            background-color: #333A44;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            justify-content: flex-start;
+            // align-items: center;
+            align-content: space-between;
             position: absolute;
             top: 100%;
             left: 0;
+        }
+
+        .header--open &__list{
+            padding-top: 64px;
+            padding-left: 32px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .header--open &__nav--link{
+            font-size: 18px;
+            line-height: 25px;
+            color: #E5ECF4;
+        }
+
+        .header--open &__item:not(:last-child){
+            margin-bottom: 24px;
         }
 
 
@@ -144,6 +111,9 @@
         }
 
         &__navbar{
+            margin: 0;
+            width: 70vw;
+            height: 87vh;
             display: none;
         }
     }

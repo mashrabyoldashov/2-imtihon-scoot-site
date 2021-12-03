@@ -1,0 +1,100 @@
+.hero{
+    margin-bottom: 160px;
+    display: flex;
+    padding-top: 153px;
+    // padding-left: 63px;
+    background-image: url(../img/hero-img1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 650px;
+
+    &__heading{
+        max-width: 600px;
+        min-height: 112px;
+        margin: 0;
+        margin-bottom: 40px;
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 56px;
+        color: #fff;
+    }
+
+    &__group{
+        margin-left: 57px;
+    }
+
+    &__desc{
+        margin: 0;
+        margin-bottom: 40px;
+        max-width: 405px;
+        min-height: 100px;
+        font-family: Lexend Deca;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #fff;
+    }
+
+    .btn-2{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .hero{
+        margin-bottom: 116px;
+        padding-top: 137px;
+        background-image: url(../img/hero-teblet-img.png);
+    
+        &__heading{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
+            text-align: center;
+            font-size: 56px;
+            line-height: 56px;
+        }
+    
+        &__group{
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        &__desc{
+            margin-bottom: 32px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 554px){
+    .hero{
+        padding-top: 115px;
+        background-image: url(../img/hero-teblet-img.png);
+    
+        &__heading{
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+        &__desc{
+            margin-bottom: 34px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 376px){
+    .hero{
+        margin-bottom: 120px;
+        background-image: url(../img/hero-mobile-img.png);
+    }
+}
