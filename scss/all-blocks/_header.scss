@@ -7,15 +7,27 @@
     }
 
     &__logo{
+        flex-shrink: 0;
         text-decoration: none;
     }
 
     &__logo--img{
+        flex-shrink: 0;
         display: block;
     }
 
     &__navbar{
+        width: 100%;
+        max-width: 940px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         margin-left: 58px;
+    }
+
+    .hamburger-menu{
+        margin-left: 0;
+        display: none;
     }
 
     &__list{
@@ -37,3 +49,49 @@
         color: #939CAA;
     }  
 }
+
+@media only screen and (max-width: 633px){
+    .header{
+        &__container{
+            padding-top: 22px;
+            padding-left: 22px;
+        }
+
+        .hamburger-menu{
+            vertical-align: middle;
+            margin-left: auto;
+            border: none;
+            background-color: #fff;
+            display: inline-block;
+        }
+
+        &__navbar{
+            display: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 376px){
+    .header{
+        &__container{
+            padding-top: 22px;
+            padding-bottom: 22px;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+
+        .hamburger-menu{
+            margin-left: 0;
+        }
+
+        &__logo{
+            display: inline-block;
+            margin: 0 auto;
+            // margin-right: 98px;
+        }
+       
+    }
+}
+
