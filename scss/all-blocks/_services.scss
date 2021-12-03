@@ -42,4 +42,88 @@
         color: #939CAA;
     }
 }
+
+@media only screen and (max-width: 768px){
+    .services{
+        &__container{
+            display: flex;
+            justify-content: center;
+        }
+
+        &__list{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            padding: 0 20px;
+            list-style: none;
+        }
+    
+        &__item{
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+
+            .box{
+                max-width: 398px;
+                min-height: 75px;
+            }
+        }
+
+        &__item:not(:last-child){
+            margin-bottom: 40px;
+        }
+
+        
+        &__img{
+            margin: 0;
+            margin-right: 79px;
+            width: 96px;
+            height: 96px;
+        }
+
+        &__desc{
+            max-width: 398px;
+            min-height: 75px;
+        }
+    } 
+}
+
+
+@media only screen and (max-width: 445px){
+    .services{
+        &__list{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            padding: 0 20px;
+            list-style: none;
+        }
+    
+        &__item{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__item:not(:last-child){
+            margin-bottom: 48px;
+        }
+    
+        &__img{
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+
+        &__heading{
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        &__desc{
+            text-align: center;
+        }
+    }
+}
     
