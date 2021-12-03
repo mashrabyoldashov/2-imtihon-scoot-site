@@ -49,6 +49,10 @@
         line-height: 25px;
         color: #939CAA;
     }  
+
+    &__nav--link:hover{
+        color: #FCB72B;
+    }
 }
 
 @media only screen and (max-width: 633px){

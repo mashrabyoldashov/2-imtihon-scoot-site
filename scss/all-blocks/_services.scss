@@ -1,4 +1,5 @@
 .services{
+    margin-bottom: 200px;
     background-image: url(../img/line.png);
     background-repeat: no-repeat;
     background-position: bottom -30px;
@@ -45,6 +46,7 @@
 
 @media only screen and (max-width: 768px){
     .services{
+        margin-bottom: 145px;
         &__container{
             display: flex;
             justify-content: center;
@@ -91,6 +93,7 @@
 
 @media only screen and (max-width: 445px){
     .services{
+        margin-bottom: 120px;
         &__list{
             display: flex;
             flex-direction: column;

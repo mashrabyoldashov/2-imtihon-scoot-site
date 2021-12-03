@@ -39,6 +39,24 @@
 
     .btn-2{
         margin-left: 0;
+        border: 3px solid transparent;
+    }
+
+    .btn-2:hover{
+        width: 180px;
+        height: 53px;
+        padding: 0;
+        padding: 14px 39px;
+        background: transparent;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FCB72B;
+        margin-left: auto;
+        white-space: nowrap;
+        border: 3px solid #FCB72B;
     }
 }
 

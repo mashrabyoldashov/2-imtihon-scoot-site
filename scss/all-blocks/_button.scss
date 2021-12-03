@@ -2,7 +2,7 @@
     width: 180px;
     height: 53px;
     padding: 0;
-    padding: 14px 39px;
+    padding: 14px 39px 14px 39px;
     background: #FCB72B;
     cursor: pointer;
     border: none;
@@ -12,6 +12,24 @@
     color: #fff;
     margin-left: auto;
     white-space: nowrap;
+    border: 3px solid transparent;
+}
+
+.btn:hover{
+    width: 180px;
+    height: 53px;
+    padding: 0;
+    padding: 14px 39px 14px 39px;
+    background: #fff;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FCB72B;
+    margin-left: auto;
+    white-space: nowrap;
+    border: 3px solid #FCB72B;
 }
 
 @media only screen and (max-width: 633px){
