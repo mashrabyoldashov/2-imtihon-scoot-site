@@ -7,6 +7,12 @@
     background-repeat: no-repeat;
     background-position: bottom right;
 
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 
     &__heading{
         max-width: 415px;
@@ -16,6 +22,73 @@
         line-height: 48px;
         letter-spacing: -2.14286px;
         color: #fff;
+    }
+
+    &__button{
+        margin-left: auto;
+        display: flex;
+    }
+
+    &__link{
+        margin-right: 18px;
+        width: 159px;
+        height: 56px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 8px 16px 9px 16px;
+        background-color: #E5ECF4;
+        text-decoration: none;
+        border-radius: 4px;
+
+        .appstore{
+            margin: 0;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: -0.446429px;
+            color: #495567;
+        }
+
+        .iphone{
+            margin: 0;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.892857px;
+            color: #495567;
+        }
+    }
+
+    &__link-2{
+        width: 182px;
+        height: 56px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 8px 16px 9px 16px;
+        background-color: #E5ECF4;
+        text-decoration: none;
+        border-radius: 4px;
+
+
+        .appstore{
+            margin: 0;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: -0.446429px;
+            color: #495567;
+        }
+
+        .iphone{
+            margin: 0;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.892857px;
+            color: #495567;
+        }
     }
 }
 
@@ -31,6 +104,10 @@
     }
     &__logo{
         margin-right: 58px;
+    }
+
+    &__logo:hover{
+        opacity: 0.6;
     }
     
     &__list{
@@ -72,5 +149,10 @@
 
     &__links{
         text-decoration: none;
+        color:  #FCB72B;
+    }
+
+    &__links:hover path{
+        fill: #E5ECF4;
     }
 }

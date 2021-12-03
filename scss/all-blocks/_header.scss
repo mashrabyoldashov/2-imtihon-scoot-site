@@ -11,6 +11,10 @@
         text-decoration: none;
     }
 
+    &__logo:hover{
+        opacity: 0.6;
+    }
+
     &__logo--img{
         flex-shrink: 0;
         display: block;
