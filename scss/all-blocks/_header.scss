@@ -26,6 +26,7 @@
     }
 
     .hamburger-menu{
+        padding: 0;
         margin-left: 0;
         display: none;
     }
@@ -50,19 +51,96 @@
     }  
 }
 
+// .header{
+//     position: relative;
+//     top: 0;
+//     left: 0;
+// }
+
+// .hamburger-link{
+//     border: none;
+//     width: 40px;
+//     height: 40px;
+//     background-color: #fff;
+//     display: inline-block;
+// }
+
+// .header-navbar{
+//     display: none;
+// }
+
+// .header--open .header-navbar{
+//     padding-top: 40px;
+//     padding-bottom: 377px;
+//     position: absolute;
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     min-height: 577px;
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     background: linear-gradient(180deg, #FEFCF7 55.94%  0%, rgba(254, 252, 247, 0.504981) );
+// }    
+
+// .header--open .header-nav-list{
+//     padding: 0;
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// .header--open .header-nav-list .header-nav-item{
+//     margin-bottom: 32px;
+// }
+
+// .header--open .header-nav-list .header-nav-item a{
+//     margin-bottom: 32px;
+//     font-family: Fraunces 9pt;
+//     font-weight: 900;
+//     font-size: 24px;
+//     line-height: 32px;
+//     color: #333D4B;
+// }
+
 @media only screen and (max-width: 633px){
     .header{
+        position: relative;
+        top: 0;
+        left: 0;
+
+        .header--open &__navbar{
+            margin: 0;
+            width: 70vw;
+            height: 100vh;
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+
         &__container{
             padding-top: 22px;
             padding-left: 22px;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
         }
 
         .hamburger-menu{
             vertical-align: middle;
-            margin-left: auto;
+            margin-left: 0;
             border: none;
             background-color: #fff;
             display: inline-block;
+        }
+
+        &__logo{
+            margin-right: 19px;
+            margin: 0 auto;
         }
 
         &__navbar{
@@ -71,27 +149,4 @@
     }
 }
 
-
-@media only screen and (max-width: 376px){
-    .header{
-        &__container{
-            padding-top: 22px;
-            padding-bottom: 22px;
-            display: flex;
-            align-items: center;
-            flex-direction: row-reverse;
-        }
-
-        .hamburger-menu{
-            margin-left: 0;
-        }
-
-        &__logo{
-            display: inline-block;
-            margin: 0 auto;
-            // margin-right: 98px;
-        }
-       
-    }
-}
 
