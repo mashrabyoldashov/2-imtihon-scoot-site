@@ -1,0 +1,39 @@
+.header{
+    &__container{
+        padding-top: 22px;
+        padding-bottom: 21px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo{
+        text-decoration: none;
+    }
+
+    &__logo--img{
+        display: block;
+    }
+
+    &__navbar{
+        margin-left: 58px;
+    }
+
+    &__list{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        margin: 0 -16px;
+    }
+
+    &__item{
+        margin: 0 16px;
+    }
+
+    &__nav--link{
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }  
+}
