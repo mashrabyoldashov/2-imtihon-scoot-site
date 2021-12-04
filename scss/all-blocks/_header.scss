@@ -66,11 +66,12 @@
         left: 0;
 
         .header--open &__navbar{
+            margin: 0;
+            padding-top: 64px;
+            margin-bottom: 24px;
             background-color: #333A44;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            // align-items: center;
             align-content: space-between;
             position: absolute;
             top: 100%;
@@ -78,11 +79,10 @@
         }
 
         .header--open &__list{
-            padding-top: 64px;
-            padding-left: 32px;
+            margin: 0;
+            // padding-top: 64px;
+            // padding-left: 32px;
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
             flex-direction: column;
         }
 
