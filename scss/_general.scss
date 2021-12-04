@@ -20,6 +20,10 @@ html {
     font-size: 16px;
     line-height: 1.5;
   }
+
+  .main{
+    flex-grow: 1;
+  }
   
   img {
     max-width: 100%;

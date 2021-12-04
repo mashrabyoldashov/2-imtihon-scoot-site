@@ -13,6 +13,10 @@
         align-items: center;
     }
 
+    .img-border{
+        border-radius: 50%;
+    }
+
     &__item:nth-child(even){
         display: flex;
         flex-direction: row-reverse;
