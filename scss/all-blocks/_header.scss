@@ -67,8 +67,13 @@
 
         
         .header--open .hamburger-menu {
+            display: block;
             background-image: url("../img/Group.svg");
-          }
+        }
+
+        .header--open .hamburger-img{
+            display: none;
+        }
 
         .header--open &__navbar{
             margin: 0;
@@ -85,8 +90,6 @@
 
         .header--open &__list{
             margin: 0;
-            // padding-top: 64px;
-            // padding-left: 32px;
             display: flex;
             flex-direction: column;
         }
@@ -131,7 +134,7 @@
 
 
         .btn-4{
-          margin-bottom: 100px;  
+          margin-bottom: 400px;  
         }
     }
 }
