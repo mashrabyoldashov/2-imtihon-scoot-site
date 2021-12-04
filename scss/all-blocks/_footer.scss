@@ -92,6 +92,79 @@
     }
 }
 
+
+@media only screen and (max-width: 768px){
+    .sign-up{
+        &__container{
+            margin-left: 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        &__heading{
+            margin-bottom: 40px;
+        }
+
+        &__button{
+            margin: 0;
+        }
+
+
+    }
+   
+}
+
+@media only screen and (max-width: 449px){
+    .sign-up{
+
+        &__heading{
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.42857px;
+        }
+        &__link{
+            padding: 8px 11px 6px 11px;
+            width: 130px;
+            height: 40px;
+
+            .appstore{
+                white-space: nowrap;
+                font-size: 10px;
+                line-height: 15px;
+            }
+    
+            .iphone{
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        &__link-2{
+            width: 130px;
+            height: 40px;
+
+            
+        .appstore{
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        .iphone{
+            margin: 0;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        }
+    }
+}
+
+
+
 .footer2{
     width: 100%;
     padding-top: 35px;
@@ -102,7 +175,13 @@
         display: flex;
         align-items: center;
     }
+
+    &__logo--img{
+        flex-shrink: 0;
+    }
+
     &__logo{
+        flex-shrink: 0;
         margin-right: 58px;
     }
 
@@ -156,3 +235,40 @@
         fill: #E5ECF4;
     }
 }
+
+@media only screen and (max-width: 581px){
+    .footer2{
+        padding-top: 64px;
+        padding-bottom: 88px;
+
+        &__container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &__logo{
+            margin: 0;
+            margin-bottom: 41px;
+        }
+
+        &__list{
+            margin: 0;
+            margin-bottom: 87px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__item:nth-child(even){
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        &__lists{
+            margin: 0;
+        }
+    }
+}
+
